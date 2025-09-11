@@ -137,6 +137,7 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('cache')->defaultValue('%kernel.cache_dir%/twig')->end()
                 ->scalarNode('charset')->defaultValue('%kernel.charset%')->end()
                 ->booleanNode('debug')->defaultValue('%kernel.debug%')->end()
+                ->booleanNode('use_yield')->defaultFalse()->end()
                 ->booleanNode('strict_variables')->defaultValue('%kernel.debug%')->end()
                 ->scalarNode('auto_reload')->end()
                 ->integerNode('optimizations')->min(-1)->end()
