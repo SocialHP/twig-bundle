@@ -174,6 +174,7 @@ class TwigExtension extends Extension
             'cache' => true,
             'auto_reload' => true,
             'optimizations' => true,
+            'use_yield' => false,
         ]));
 
         $container->registerForAutoconfiguration(\Twig_ExtensionInterface::class)->addTag('twig.extension');
